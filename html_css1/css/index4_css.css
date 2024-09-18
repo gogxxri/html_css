@@ -7,17 +7,20 @@
 
 .title{
     text-align: center;
-    font-size:16px
+    font-size:16px;
 }
 
-/*스타일 우선순위  : 인라인style -> id -> class -> tag*/
-p {
-    color : red; /*꼴등*/
-}
-#content {
-    color : grey; /* 우선2*/
-}
-.semi-title { /* 우선3*/
+.semi-title {
     text-align: center;
-    color : blue
+}
+
+.box {
+    width :100px;
+    height:100px;
+    background-color : grey;
+    display: block; /*가로의 전체 차지*/
+    margin : 0 auto;
+    padding : 40px;
+    border-radius: 15px;
+    font-size : 10px;
 }
