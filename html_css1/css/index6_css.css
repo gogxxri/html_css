@@ -13,7 +13,7 @@
     background-color : cornflowerblue;
     /* float: left; */
     display: inline-block; /*자기 크기만큼 자리 차지 -공백 제거 필요*/
-    /* vertical-align: top; */
+    vertical-align: top;
 }
 
 .right {
@@ -29,6 +29,6 @@
     width:100%;
     height:100px;
     background-color: grey;
-    /* clear:both; */
-    /* float : none; */
+    /* clear:both;
+    float : none; */
 }
