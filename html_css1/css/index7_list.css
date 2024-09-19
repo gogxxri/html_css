@@ -52,3 +52,22 @@ p, h5{
     float : left;
     background-color : black;
 }
+
+.nav-bar li{/*모든 자손 (자식의 자식 같은 것도 포함)*/
+    display : inline-block;
+    width:60px;
+    text-align: center;
+    background-color: #eee;
+    padding : 10px;
+    border-radius: 10px;
+}
+
+.nav-bar>li{ /*모든 직계 자신 (바로 밑에 있는 자식만)*/
+    display : inline-block;
+}
+
+.nav-bar a {
+    font-size: 20px;
+    text-decoration: none;
+    color : black;
+}
