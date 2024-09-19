@@ -1,0 +1,20 @@
+.main-background{
+    width:100%;
+    height:500px;
+    background-image : url(../laptop.jpeg) /*, url(); 배경 여러개 가능*/;
+    /* background-size : 100%; 이미지를 상위 바디 태그의 100% */
+    background-size: cover; /*배경이 잘려도 되니 div박스를 꽉 채우기 */
+    /* background-size: contain; 여백이 되니 배경 잘리지 않게 */
+    background-repeat: no-repeat;
+    background-position: center; /*배경 위치 조정*/
+    /* background-attachment: fixed; 스크롤 시 배경 위치 조정 */
+    /* filter : brightness(70%) saturate(90%) 박스에 보정 입히기(안에 글자가 있으면 그 글자 안에도 필터 씌워짐) */
+    padding:1px /*테두리가 겹치지 않도록 padding 줌*/
+}
+
+.main-title{
+    color : white;
+    font-size: 40px;
+    /* margin-top:300px; 테두라가 겹치면 윗쪽 박스에도 마진이 같이 생김 - margin collapse버그*/
+    margin-top:20px;
+}
