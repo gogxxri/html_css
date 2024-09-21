@@ -1,3 +1,7 @@
+body{
+    margin : 0;
+    text-align: center;
+}
 .main-background{
     width:100%;
     height:500px;
@@ -17,4 +21,25 @@
     font-size: 40px;
     /* margin-top:300px; 테두라가 겹치면 윗쪽 박스에도 마진이 같이 생김 - margin collapse버그*/
     margin-top:20px;
+}
+
+.main-btn{
+    padding :15px;
+    font-size : 20px;
+    background : white;
+    border : none;
+    border-radius:  10px;;
+    position : relative; /*내 원래 위치를 기준으로 이동 & 공중에 뜸*/
+    top : 100px; /*내 원래 위치에서 위에서 100px 떨어뜨리기*/
+    /* position:static 좌표이동 안함 */
+    /* position:fixed  뷰포트 현재화면 기준으로 좌표 이동 */
+    /* position:absolute 부모 태그중 position:relative를 가진 태그를 기준으로 좌표이동*/
+} 
+
+.a { /* position:absolute가 붙은 요소 가운데 정렬 하는 방법*/
+    position:absolute; 
+    left : 0;
+    right:0;
+    margin : auto;
+    width:150px;
 }
