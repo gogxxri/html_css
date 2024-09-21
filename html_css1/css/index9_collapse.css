@@ -1,3 +1,7 @@
+div{
+    box-sizing: border-box; /*미리 작성해서 box-sizing 설정*/
+}
+
 body{
     margin : 0;
     text-align: center;
@@ -13,7 +17,8 @@ body{
     background-position: center; /*배경 위치 조정*/
     /* background-attachment: fixed; 스크롤 시 배경 위치 조정 */
     /* filter : brightness(70%) saturate(90%) 박스에 보정 입히기(안에 글자가 있으면 그 글자 안에도 필터 씌워짐) */
-    padding:1px /*테두리가 겹치지 않도록 padding 줌*/
+    padding:1px; /*테두리가 겹치지 않도록 padding 줌*/
+    position : relative;
 }
 
 .main-title{
@@ -36,10 +41,21 @@ body{
     /* position:absolute 부모 태그중 position:relative를 가진 태그를 기준으로 좌표이동*/
 } 
 
-.a { /* position:absolute가 붙은 요소 가운데 정렬 하는 방법*/
+/* .a { position:absolute가 붙은 요소 가운데 정렬 하는 방법
     position:absolute; 
     left : 0;
     right:0;
     margin : auto;
     width:150px;
+} */
+
+.white-box{
+    max-width: 800px;
+    width : 80%;
+    margin : auto;
+    padding: 20px;
+    background-color: #eee;
+    position : relative;
+    top : -40px;
+    box-sizing: border-box; /*padding, border 포함한 width설정 가능*/
 }
