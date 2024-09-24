@@ -1,0 +1,6 @@
+table {
+    border-collapse: collapse; /*셀 간 간격 없애줌*/
+}
+td, th{
+    border : 1px solid black;
+}
