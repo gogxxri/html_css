@@ -1,6 +1,31 @@
 table {
     border-collapse: collapse; /*셀 간 간격 없애줌*/
 }
-td, th{
-    border : 1px solid black;
+/* td, th{
+    border :1px solid #c2d3de; */
+/* } */
+.cart-background {
+    width : 100%;
+    background-color : #eee;
+    padding :20px
+}
+
+.cart-table {
+    width : 100%;
+    max-width : 700px;
+    margin : auto;
+    background : white;
+    border-radius: 10px;
+}
+
+.cart-table td,  .cart-table th{
+    padding : 15px;
+    border-bottom :1px solid #c2d3de;
+}
+/* .table-long{
+    width : 700px;
+} */
+
+.cart-table th:nth-child(2){
+    width : 1000px;
 }
