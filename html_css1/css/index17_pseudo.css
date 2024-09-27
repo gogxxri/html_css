@@ -1,0 +1,33 @@
+.btn{
+    padding :15px;
+    font-size : 20px;
+    border : none;
+    border-radius : 10px;
+    background-color : coral;
+    cursor : pointer;
+}
+
+/*psedo css 순서 주의!! hover -> focus -> active 해야 제대로 사용 가능함*/
+.btn:hover {
+    background-color : chocolate;
+}
+
+.btn:focus{ /*커서 찍혀있을때*/
+    background-color : grey;
+}
+.btn:active{ /*클릭 상태*/
+    background-color : brown;
+}
+.input-text:focus {
+    border:10px solid red;
+}
+.custom-link {
+    text-decoration : none;
+}
+.custom-link:link {/*방문 전 링크*/
+    color : rgb(73, 26, 8);
+}
+.custom-link:visited {/*방문 후 링크*/
+    color : red;
+}
+
