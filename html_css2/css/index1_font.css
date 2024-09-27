@@ -1,0 +1,13 @@
+body {
+    font-family : 'Pretendard', 'gothic'
+}
+
+/* 사용자의 컴퓨터에 설치되지 않은 폰트를 사이트에서 이용하려면  */
+@font-face {
+    font-family : 'Pretendard';
+    src : url(../font/Pretendard.woff)
+}
+/*안티앨리어싱 - 폰트 부드럽게 처리*/
+p, h1, h3, h2, h1, span{
+    transform:  rotate(0.03deg); /*방향을 살짝만 돌려주면 글자 부드러워 보임*/
+}
