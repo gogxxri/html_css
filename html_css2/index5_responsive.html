@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./css/index5_responsive.css" rel="stylesheet" />
+    <!--익스플로러 X 버전 이하에서만 적용할 수 있는 CSS파일을 첨부
+    : 예시로 - 익스플로러 옛날 버전에는 display:flex 적용 안됨,,-->
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+    <![endif]-->
   </head>
   <body>
     <!-- <div class="test"></div> -->
@@ -32,6 +37,6 @@
         <p>내용</p>
       </div>
     </div>
-    <div style="clear:both" float="none"></div>
+    <div style="clear: both" float="none"></div>
   </body>
 </html>
