@@ -11,3 +11,30 @@ body {
 p, h1, h3, h2, h1, span{
     transform:  rotate(0.03deg); /*방향을 살짝만 돌려주면 글자 부드러워 보임*/
 }
+
+.flex-container{
+    display: flex;
+    /* justify-content:flex-end; */
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    height : 400px;
+    align-items: center;
+}
+
+.flex-item {
+    /* flex특징 : width나 height가 최대한 설정된 크기로 조정하려고 함 */
+    width : 100px; 
+    height : 100px; 
+    background-color: grey;
+    margin : 5px;
+}
+.nav{
+    display: flex;
+    background-color: coral;
+    height : 50px;
+    align-items: center;
+}
+.nav-list{
+    margin: 10px;;
+}
