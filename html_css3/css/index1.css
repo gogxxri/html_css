@@ -39,3 +39,52 @@
 .input-file::file-selector-button:hover{
     background-color: blue;
 }
+
+/*-webkit : 크롬에서만 적용되는 스타일 (요즘 크롬, 사파리 엣지 에서 사*/
+.input-file2::-webkit-file-upload-button { 
+    background : black;
+    color:white;
+}
+
+.input-file3{
+    display: none;
+}
+
+input::-webkit-input-placeholder {
+    color: red;
+}
+input[type=range] {
+    appearance: none;
+    -webkit-appearance: none; /*브라우저기본 css 안 보이게*/
+}
+input[type=range]::-webkit-slider-thumb{
+    appearance: none; 
+    -webkit-appearance: none; 
+    background-color: red; 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: #ddd; /* 트랙 색 */
+    height: 20px; /* 트랙 높이 */
+}
+
+progress {
+    -webkit-appearance: none;
+    -moz-appearance : none;
+    appearance: none;
+    background: white;
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgb(170, 73, 73);
+    border-radius: 5px;;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
