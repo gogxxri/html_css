@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*기본 css 문법*/
+:root {
+  --main-color: red;
+}
+
+.box {
+  background-color: var(--main-color);
+}
+
+/*SASS*/
+/*$는 변수*/
+.background {
+  background-color: #2a4cb2;
+  font-size: 80px; /*사칙연산 가능*/
+}
+
+.small-font {
+  font-size: 11px;
+}/*# sourceMappingURL=index4.css.map */

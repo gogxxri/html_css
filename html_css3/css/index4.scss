@@ -1,0 +1,20 @@
+/*기본 css 문법*/
+:root { 
+    --main-color : red;
+}
+.box{
+    background-color: var(--main-color);
+}
+
+
+/*SASS*/
+$mainColor : #2a4cb2; /*$는 변수*/
+$basicSize : 16px;
+
+.background{
+    background-color: $mainColor;
+    font-size : ($basicSize * 5); /*사칙연산 가능*/
+}
+.small-font {
+    font-size : $basicSize - 5px;
+}
