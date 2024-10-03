@@ -18,3 +18,59 @@ $basicSize : 16px;
 .small-font {
     font-size : $basicSize - 5px;
 }
+
+/* <<< nesting 문법과 원래 문법 >>>*/
+/* 1. 원래문법*/
+.main-bg h4 { 
+    font-size:12px
+}
+.main-bg button{
+    color : red;
+}
+
+/* 2. scss의 nesting 문법*/
+.main-bg {
+    h4 {
+        font-size:16px;
+    }
+    button {
+        color : red;
+    }
+}
+
+/* <<< extend 문법!! >>>*/
+%btn{ /*btn은 임시코드(단독으로 컴파일 안됨) : 기본 뼈대 코드를 넣어서*/
+    width : 100px;
+    height : 100px;
+    padding : 20px;
+}
+.btn-green {
+    @extend %btn; /*extend 해 사용*/
+    color :green;
+}
+
+.btn-red {
+    @extend %btn;
+    color :red;
+}
+
+.bg {
+    width : 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+.bg-r { /*class도 extend 가능*/
+    @extend .bg;
+    background-color: red;
+}
+
+.bg-g { 
+    @extend .bg;
+    background-color: rgb(51, 255, 0);
+}
+
+.bg-b { 
+    @extend .bg;
+    background-color: rgb(98, 0, 255);
+}
