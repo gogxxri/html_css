@@ -1,3 +1,5 @@
+@use 'reset'; /*다른 css 임포트*/
+
 /*기본 css 문법*/
 :root { 
     --main-color : red;
@@ -73,4 +75,19 @@ $basicSize : 16px;
 .bg-b { 
     @extend .bg;
     background-color: rgb(98, 0, 255);
+}
+
+/*mixin*/
+@mixin font-letter($font, $spacing){
+    font-size:$font;
+    #{$spacing} :30px;
+}
+
+h2 {
+    @include font-letter(40px, letter-spacing);
+    color : reset.$main; /*다른 파일에 있는 css변수 가져다 쓸 수 있음*/
+}
+
+h4{
+    @include font-letter(20px , width)
 }

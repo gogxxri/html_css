@@ -1,4 +1,13 @@
 @charset "UTF-8";
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+/*다른 css 임포트*/
 /*기본 css 문법*/
 :root {
   --main-color: red;
@@ -69,4 +78,16 @@
 
 .bg-b {
   background-color: rgb(98, 0, 255);
+}
+
+/*mixin*/
+h2 {
+  font-size: 40px;
+  letter-spacing: 30px;
+  color: brown; /*다른 파일에 있는 css변수 가져다 쓸 수 있음*/
+}
+
+h4 {
+  font-size: 20px;
+  width: 30px;
 }/*# sourceMappingURL=index4.css.map */
