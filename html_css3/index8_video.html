@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--muted는 음소거상태
+        autoplay는 자동재생 (muted와 함께 넣어야 동작함)
+        poster는 썸네일이미지
+        preload는 영상을 먼저 다운을 받을지 말지를 선택가능 (auto, metadata, none 사용가능)-->
+    <video controls autoplay muted loop> <!--자동재생 : autoplay muted-->
+        <source src="https://codingapple.com/wp-content/uploads/2019/07/bridge.mp4" type="video/mp4">
+    </video>
+
+    <audio src="bass.mp3" controls muted></audio>
+
+    <audio controls muted>
+        <source src="bass.mp3">
+    </audio>
+</body>
+</html>
