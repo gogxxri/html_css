@@ -7,6 +7,7 @@ div {
   box-sizing: border-box;
 }
 
+/*reset 앞에 언더바 붙이면 단독으로 컴파일 하지 않음*/
 /*다른 css 임포트*/
 /*기본 css 문법*/
 :root {
@@ -90,4 +91,54 @@ h2 {
 h4 {
   font-size: 20px;
   width: 30px;
+}
+
+/**/
+.sh-list li {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+.sh-list .active {
+  background-color: skyblue;
+  color: white;
+}
+.sh-list .active:hover {
+  background-color: rgb(28, 63, 77);
+  color: white;
+}
+
+.alert-box-green {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: green;
+}
+
+.alert-box-yellow {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: yellow;
+}
+
+.alert-box-blue {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: blue;
+}
+
+/**/
+.row .col-6 {
+  float: left;
+  float: left;
+  width: 50%;
+  padding: 15px;
+  padding: 15px;
+}
+
+.row .col-4 {
+  float: left;
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  padding: 15px;
 }/*# sourceMappingURL=index4.css.map */

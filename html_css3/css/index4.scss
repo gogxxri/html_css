@@ -91,3 +91,58 @@ h2 {
 h4{
     @include font-letter(20px , width)
 }
+
+/**/
+.sh-list {
+    li{
+        list-style : none;
+        padding :15px;
+        border : 1px solid #eee;
+    }
+
+    .active {
+        background-color: skyblue;
+        color : white;
+    }
+
+    .active:hover {
+        background-color: rgb(28, 63, 77);
+        color : white;
+    }
+}
+
+@mixin alert-box($bg) {
+    padding : 10px;
+    border-radius: 10px;
+    background-color: $bg;
+}
+
+
+.alert-box-green {
+    @include alert-box (green)
+}
+
+.alert-box-yellow {
+    @include alert-box (yellow)
+}
+
+.alert-box-blue {
+    @include alert-box (blue)
+}
+/**/
+@mixin col($col-width){
+    float : left;
+    width : $col-width;
+    padding : 15px;
+}
+.row .col-6 {
+    float : left;
+    @include col (50%);
+    padding : 15px;
+}
+
+.row .col-4 {
+    float : left;
+    @include col (33.33%);
+    padding : 15px;
+}
