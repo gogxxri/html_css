@@ -1,0 +1,29 @@
+.ani-text{
+    padding : 100px;
+    transform : rotate(10deg) translateX(100px) skew(30deg) scale(2) translate(500px, 200px);
+}
+
+.btn:hover{
+    animation-name:move;
+    animation-duration : 1s;
+    /*애니메이션 이름을 name에
+    애니메이션 동작시간을 duration에*/
+    animation-timing-function : linear; /*베지어 주기*/
+    /* animation-delay : 1s; 시작 전 딜레이 */
+    animation-iteration-count : 3; /*몇회 반복할것인가*/
+    animation-play-state: running;
+    animation-fill-mode: forwards;  /*애니메이션 끝난 후에 원상복구 하지 말고 정지*/
+    
+}
+
+@keyframes move {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(100px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
