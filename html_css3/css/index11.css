@@ -1,0 +1,46 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;  
+    grid-template-rows: 100px 100px 100px; 
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows : 1fr 1fr 1fr; */
+    /* height : auto; 그리드 전체 높이 */
+    /* grid-gap : 5px; */
+}
+.grid-container div {
+    border : 1px solid black;
+}
+.grid-nav {
+    grid-column : 1/5; /*세로선 1~4만큰 차지*/
+}
+
+.grid-sidebar {
+    grid-row: 2 / 4; /* 두 번째 행부터 차지 */
+}
+.grid-article{
+    grid-column : 2/5;
+    grid-row: 2 / 4;
+}
+
+/****************************/
+.grid-container2{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;  
+    grid-template-rows: 100px 100px 100px; 
+    grid-template-areas:
+    "header header header header"
+    "side article article article"
+    "side article article article"
+}
+.grid-container2 div {
+    border : 1px solid red;
+}
+.grid-nav2{
+    grid-area:header;
+}
+.grid-sidebar2{
+    grid-area:side;
+}
+.grid-article2{
+    grid-area:article;
+}
