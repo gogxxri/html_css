@@ -1,0 +1,16 @@
+.grey {
+    background-color: lightgrey;
+    height : 2000px;
+    margin-top: 500px;
+}
+
+.image  {
+    float:right ;
+    width : 400px;
+    position : sticky; /*조건부로 포지션 fixed 되는 sticky, 부모 박스 넘어가면 해제*/
+    top : 100px; 
+}
+.text {
+    float : left;
+    width : 400px;
+}
